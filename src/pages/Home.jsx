@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react"; // <--- Importar useState
-import ItemCard from "../components/itemCard"; // Verifique se o nome do arquivo é ItemCard ou itemCard
+import ItemCard from "../components/ItemCard"; // Verifique se o nome do arquivo é ItemCard ou itemCard
 import ModalConfirm from "../components/ModalConfirm"; // <--- Importar o ModalConfirm
 
 const Home = ({ watchlist, setWatchlist, onRemove, onEditTarget }) => {
@@ -90,3 +90,4 @@ const Home = ({ watchlist, setWatchlist, onRemove, onEditTarget }) => {
 };
 
 export default Home;
+
