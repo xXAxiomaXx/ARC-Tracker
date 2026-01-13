@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Remove o espaço que as setas ocupavam */
+}
+
+/* Para Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Define a aparência como um campo de texto normal */
+}
+
