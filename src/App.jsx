@@ -110,10 +110,39 @@ function App() {
             }
           />
         </Routes>
+        
       </div>
+      <footer class="w-screen bg-slate-950 flex justify-center items-center">
+        <div class="w-full p-2 flex flex-col items-center justify-center">
+          <h3 class=" text-gray-500 md:text-xs tracking-wide">
+            Powered by{" "}
+            <a
+              href="https://metaforge.app/arc-raiders"
+              class="hover:underline hover:text-slate-50"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              metaforge.app/arc-raiders{" "}
+            </a>
+          </h3>
+          <hr class="my-2 w-11/12 md:w-1/2 border-gray-500" />
+          <span class="text-sm md:text-xs text-gray-500 flex gap-1 text-center">
+            © 2024
+            <a
+              href="https://emouradev.vercel.app/"
+              target="_blank"
+              class="hover:underline hover:text-slate-50"
+              rel="noopener noreferrer"
+            >
+              EM Dev
+            </a>
+            | All Rights Reserved.
+          </span>
+        </div>
+      </footer>
     </Router>
   );
 }
 
 export default App;
-
