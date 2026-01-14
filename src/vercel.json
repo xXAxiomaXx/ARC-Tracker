@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/arc-raiders/:path*",
+      "destination": "https://metaforge.app/api/arc-raiders/:path*"
+    }
+  ]
+}
