@@ -9,11 +9,11 @@ let abortController = null;
 // Função para mapear raridade para cor
 export const getRarityColor = (rarity) => {
   const rarityMap = {
-    common: "[#6c6c6c]",
-    uncommon: "[#26bf57]",
-    rare: "[#00a8f2]",
-    epic: "[#cc3099]",
-    legendary: "[#ffc600]",
+    common: "text-[#6c6c6c]",
+    uncommon: "text-[#26bf57]",
+    rare: "text-[#00a8f2]",
+    epic: "text-[#cc3099]",
+    legendary: "text-[#ffc600]",
   };
 
   return rarityMap[rarity?.toLowerCase()] || "text-slate-400";

@@ -121,7 +121,7 @@ const AddItem = ({ setWatchlist, watchlist }) => {
                   {item.name}
                 </p>
                 <p
-                  className={`text-${getRarityColor(
+                  className={`${getRarityColor(
                     item.rarity
                   )} uppercase font-mono`}
                 >
