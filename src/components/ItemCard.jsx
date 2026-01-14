@@ -1,5 +1,3 @@
-import React from "react";
-
 // src/components/ItemCard.jsx (Versão Atualizada)
 const ItemCard = ({ item, onUpdate, onRemove, onEditTarget }) => {
   const missing = Math.max(0, item.target - item.owned);
