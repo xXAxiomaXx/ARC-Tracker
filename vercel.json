@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/arc-raiders",
+      "destination": "/api/arc-raiders"
+    }
+  ]
+}

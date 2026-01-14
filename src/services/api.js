@@ -1,6 +1,4 @@
-const BASE_URL = import.meta.env.PROD
-  ? "https://metaforge.app/api/arc-raiders"
-  : "/api/arc-raiders";
+const BASE_URL = "/api/arc-raiders";
 
 // Cache para armazenar resultados de buscas
 const searchCache = new Map();
@@ -22,7 +20,7 @@ export const getRarityColor = (rarity) => {
 // Busca a lista inicial (opcional, apenas se quiser mostrar algo antes de digitar)
 export const fetchItems = async () => {
   try {
-    const response = await fetch(`${BASE_URL}/items`, {
+    const response = await fetch(BASE_URL, {
       headers: {
         Accept: "application/json",
       },
@@ -51,7 +49,7 @@ export const searchItems = async (query) => {
     }
     abortController = new AbortController();
 
-    const url = `${BASE_URL}/items?search=${encodeURIComponent(query)}`;
+    const url = `${BASE_URL}?search=${encodeURIComponent(query)}`;
     const response = await fetch(url, {
       signal: abortController.signal,
       headers: {
