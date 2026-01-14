@@ -55,7 +55,7 @@ const AddItem = ({ setWatchlist, watchlist }) => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 p-4 min-w-screen max-w-screen mx-auto">
+    <div className="min-h-screen bg-slate-950 p-4 w-full mx-auto">
       {/* O Componente Modal (Invisível até isModalOpen ser true) */}
       <ModalInput
         isOpen={isModalOpen}
@@ -147,3 +147,4 @@ const AddItem = ({ setWatchlist, watchlist }) => {
 };
 
 export default AddItem;
+
