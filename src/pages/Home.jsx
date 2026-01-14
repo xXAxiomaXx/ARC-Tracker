@@ -85,7 +85,7 @@ const Home = ({ watchlist, setWatchlist, onRemove, onEditTarget }) => {
           Clear Completed Items
         </button>
       )}
-      <footer class="absolute w-screen bottom-0 left-0 flex justify-center items-center">
+      /*<footer class=" w-screen flex justify-center items-center">
         <div class="w-full p-2 flex flex-col items-center justify-center">
           <h3 class=" text-gray-500 md:text-xs tracking-wide">
             Powered by{" "}
@@ -113,9 +113,10 @@ const Home = ({ watchlist, setWatchlist, onRemove, onEditTarget }) => {
             | All Rights Reserved.
           </span>
         </div>
-      </footer>
+      </footer>*/
     </div>
   );
 };
 
 export default Home;
+
