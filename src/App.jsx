@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AddItem from "./pages/AddItem";
 import ModalInput from "./components/ModalInput";
 import ModalConfirm from "./components/ModalConfirm"; // <--- Importe o novo modal
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [watchlist, setWatchlist] = useState(() => {
@@ -110,6 +111,7 @@ function App() {
             }
           />
         </Routes>
+        <Analytics/>
         
       </div>
       <footer class="w-screen bg-slate-950 flex justify-center items-center">
@@ -146,3 +148,4 @@ function App() {
 }
 
 export default App;
+
