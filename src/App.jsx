@@ -70,7 +70,7 @@ function App() {
 
   return (
     <Router>
-      <div className="h-screen w-screen bg-slate-950 text-slate-100 font-sans pb-10 overflow-x-hidden">
+      <div className="min-h-screen w-screen bg-slate-950 text-slate-100 font-sans pb-10 overflow-x-hidden">
         {/* Modal de Edição de Meta */}
         <ModalInput
           isOpen={isEditModalOpen}
@@ -116,3 +116,4 @@ function App() {
 }
 
 export default App;
+
